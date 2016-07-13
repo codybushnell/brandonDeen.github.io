@@ -247,9 +247,9 @@
 	};
 
 /**** add elements with jQuery ******/
-function displayMap(){
-	$("#mapDiv").append(googleMap);
-}
+// function displayMap(){
+// 	$("#mapDiv").append(googleMap);
+// }
 
 function inName(name){
 	name = name.trim().split(' ');
