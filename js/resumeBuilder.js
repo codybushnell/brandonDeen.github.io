@@ -251,22 +251,12 @@
 // 	$("#mapDiv").append(googleMap);
 // }
 
-function inName(name){
-	name = name.trim().split(' ');
-	name[0] = name[0].charAt(0).toUpperCase() + name[0].slice(1).toLowerCase();
-	name[1] = name[1].toUpperCase();
-
-	return name.join(' ');
-}
-
 bio.displayHeader();
 work.display();
 education.display();
 projects.display();
-displayMap();
+// displayMap();
 bio.displayFooter();
-
-// $("#main").append(internationalizeButton);
 
 
 
