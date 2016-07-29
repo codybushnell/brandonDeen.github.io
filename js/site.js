@@ -147,13 +147,13 @@ function get_portfolio(){
 }
 
 function get_contact(){
-	return	"<h2 class='text-center'>Contact Me</h2><br><br><br>"
-			+bio.big_links.join('')
+	return	"<h2 class='text-center'>Contact Me</h2><br><br><br>" + bio.big_links.join('')
+
 }
 
 var bio = {
 	name: "Brandon Deen",
-	summary: "I'm a technology enthusiast that loves to write code, solve problems, and re-enact scenes from Frozen with my daughter. <img src='resources/kaizensmall.png'>",
+	summary: "I'm a technology enthusiast that loves to write code, solve problems, and re-enact scenes from Frozen with my daughter. <img src='resources/kaizensmall.png'> <br>",
 	philosophy: "~ Constantly strive to become the best version of yourself ~", //, Love what you do, not how much you get paid to do it ~",
 	interests: ["Artificial Intelligence", "Machine Learning", "Web Development", ],
 	links: [
@@ -191,14 +191,14 @@ var bio = {
 var skills = {
 	// skill levels 0-24:Beginner, 25-40:Familiar, 40-70:Proficient, 70-95:Expert, 90+:Master
 	skills: [
-		{name: "Java", level: 60, level_str: "Proficient", color: "lightgreen" }
-		,{name: "Python", level: 65, level_str: "Proficient", color: "lightgreen" }
-		,{name: "C#", level: 50, level_str: "Proficient", color: "lightgreen" }
-		,{name: "SQL", level: 45, level_str: "Proficient", color: "lightgreen" }
+		{name: "Java", level: 70, level_str: "Pretty Good", color: "lightgreen" }
+		,{name: "Python", level: 80, level_str: "Strong", color: "lightgreen" }
+		,{name: "C#", level: 70, level_str: "Pretty Good", color: "lightgreen" }
+		,{name: "SQL", level: 60, level_str: "Proficient", color: "lightgreen" }
 		,{name: "HTML", level: 60, level_str: "Proficient", color: "lightblue" }
-		,{name: "CSS", level: 30, level_str: "Familiar", color: "lightblue" }
-		,{name: "Javascript", level: 60, level_str: "Proficient", color: "lightblue" }
-		,{name: "JQuery", level: 50, level_str: "Proficient", color: "lightblue" }	
+		,{name: "CSS", level: 50, level_str: "More to Learn", color: "lightblue" }
+		,{name: "Javascript", level: 80, level_str: "Strong", color: "lightblue" }
+		// ,{name: "JQuery", level: 50, level_str: "Proficient", color: "lightblue" }	
 		// ,{name: "JQuery", level: 50, level_str: "Proficient", color: "lightblue" }
 		// ,{name: "JQuery", level: 50, level_str: "Proficient", color: "lightblue" }	
 	],
