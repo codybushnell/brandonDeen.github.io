@@ -269,7 +269,7 @@ var projects = {
 				description: "A text based role playing game, that runs in the console. You can create a character, customize their race, name and gender. Then go through a series of battles against tougher and tougher enemies, all while gaining gold that you can use to buy new equipment and upgrade you character with.", 
 				github: "https://github.com/brandonDeen/Text_RPG_Python", 
 				technologies_used: "Python, SQL, Future: Incorporate Flask to create a web project",
-				image: "resources/brandon1.jpg"
+				image: "resources/brandon1.JPG"
 			},
 			{
 				name: "DroidMD", 
