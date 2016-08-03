@@ -2,6 +2,19 @@ $(document).ready(function(){
 
 	load_content( get_page_sections() );
 	animate_skills_bar();
+	$('.navbar a, #home a[href=#about],footer a[href=#myPage]').on('click', function(event){
+				if(this.hash !== ''){
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate(
+						{ scrollTop: $(hash).offset().top }, 
+						900, 
+						function(){
+							window.location.hash = hash;
+						}
+					);
+				}
+			});
 });
 
 function animate_skills_bar(){
@@ -57,7 +70,7 @@ function get_header(){
 }
 
 function get_footer(){
-	return	"<a class='up-arrow' href='#myPage' data-toggle='tooltip' title='TO TOP'>"
+	return	"<a class='up-arrow' href='#myPage' data-toggle='tooltip' title='Top of Page'>"
 			+	"<span class='glyphicon glyphicon-chevron-up'></span>"
 		+	"</a>"
 		// +	"<br><br><p>This site was built by the man himself...<em>Brandon Deen</em></p>"
@@ -68,7 +81,11 @@ function get_home(){
 	return 	"<div class='carousel-inner' role='listbox'>"
 				+"<div class='item active'>"
 					+"<img id='top-image' src='"+ bio.big_image +"' alt='Brandon-0' width='1200' height='700'>"
-					+"<div class='carousel-caption'> <p>"+ bio.philosophy +"</p> </div>"
+					+"<div class='carousel-caption'> <p>"+ bio.philosophy +"</p> "
+						+"<a class='down-arrow' href='#about' data-toggle='tooltip' title='See More'>"
+							+"<span class='glyphicon glyphicon-chevron-down'></span>"
+						+"</a>"
+					+"</div>"
 				+"</div>"
 			+"</div>"
 }
@@ -154,8 +171,9 @@ function get_contact(){
 var bio = {
 	name: "Brandon Deen",
 	summary: "I'm a technology enthusiast that loves to write code, solve problems, and re-enact scenes from Frozen with my daughter. <img src='resources/kaizensmall.png'> <br>",
-	philosophy: "~ Constantly strive to become the best version of yourself ~", //, Love what you do, not how much you get paid to do it ~",
-	interests: ["Artificial Intelligence", "Machine Learning", "Web Development", ],
+	philosophy: "~ Constantly strive to become the best version of yourself ~", 
+	education: "<img src='resources/uta.jpg' data-toggle='tooltip' title='University of Texas Arlington'> B.S. Software Engineering <br>"
+				+"<img src='resources/sfa.jpg' data-toggle='tooltip' title='Stephen F. Austin State University'> B.S. Physics",
 	links: [
 		"&nbsp; <a href='mailto:brandon.deen47@gmail.com'><i class='fa fa-envelope'></i></a>", 
 		"&nbsp; <a href='https://github.com/brandonDeen'><i class='fa fa-github'></i></a>" , 
@@ -180,7 +198,7 @@ var bio = {
 					// +"</div>" 
 						+"<ul class='list-group list-group-flush dark'>"
 							+"<li class='list-group-item'>"+ bio.summary +"</li>"
-							// +"<li class='list-group-item'>"+ bio.interests.join(' | ') +"</li>"
+							+"<li class='list-group-item'>"+ bio.education +"</li>"
 							+"<li class='list-group-item'>"+ bio.links.join('') +"</li>"
 						+"</ul>"
 					+"</div>" 
