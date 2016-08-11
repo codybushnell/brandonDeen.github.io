@@ -159,7 +159,7 @@ function get_portfolio(){
 		+"<div class='row'>" 
 			+ projects.display_latest()
 		+"</div><br><br>"
-		+"<button type='button' class='btn btn-default' href='https://github.com/brandonDeen'>More Projects</button>"
+		+"<a type='button' target='_blank' class='btn btn-default' href='https://github.com/brandonDeen'>More Projects</a>"
 	;
 }
 
@@ -207,18 +207,15 @@ var bio = {
 }
 
 var skills = {
-	// skill levels 0-24:Beginner, 25-40:Familiar, 40-70:Proficient, 70-95:Expert, 90+:Master
+	// skill levels 20: Beginner, 40: Familiar, 60: Proficient, 80: Expert, 100: Master
 	skills: [
-		{name: "Java", level: 70, level_str: "Pretty Good", color: "lightgreen" }
-		,{name: "Python", level: 80, level_str: "Strong", color: "lightgreen" }
-		,{name: "C#", level: 70, level_str: "Pretty Good", color: "lightgreen" }
+		{name: "Java", level: 70, level_str: "Proficient", color: "lightgreen" }
+		,{name: "Python", level: 70, level_str: "Proficient", color: "lightgreen" }
+		,{name: "C#", level: 70, level_str: "Proficient", color: "lightgreen" }
 		,{name: "SQL", level: 60, level_str: "Proficient", color: "lightgreen" }
 		,{name: "HTML", level: 60, level_str: "Proficient", color: "lightblue" }
-		,{name: "CSS", level: 50, level_str: "More to Learn", color: "lightblue" }
-		,{name: "Javascript", level: 80, level_str: "Strong", color: "lightblue" }
-		// ,{name: "JQuery", level: 50, level_str: "Proficient", color: "lightblue" }	
-		// ,{name: "JQuery", level: 50, level_str: "Proficient", color: "lightblue" }
-		// ,{name: "JQuery", level: 50, level_str: "Proficient", color: "lightblue" }	
+		,{name: "CSS", level: 50, level_str: "Familiar", color: "lightblue" }
+		,{name: "Javascript", level: 70, level_str: "Proficient", color: "lightblue" }
 	],
 	string: function(){
 		s = "";
