@@ -319,7 +319,7 @@ var projects = {
 			{
 				name: "My Personal Webpage", 
 				description: "This page right here!", 
-				github: "#", 
+				github: "https://github.com/brandonDeen/brandonDeen.github.io", 
 				technologies_used: "HTML, CSS - Bootstrap, FontAwesome, & W3 Schools, Javascript - JQuery",
 				image: "resources/personal.jpg"
 			},
@@ -333,7 +333,7 @@ var projects = {
 			{
 				name: "HackerRank", 
 				description: "My repo of code challenges & problems I do for fun.", 
-				github: "#", 
+				github: "https://github.com/brandonDeen/Hacker_Rank", 
 				technologies_used: "Java, Javascript, Python",
 				image: "resources/hackerrank.png"
 			},
@@ -361,14 +361,18 @@ var projects = {
 		],
 		
 		display_single: function(index){ 
+			var description = +"<p><strong>Description:</strong> "+ projects.projects[index].description +"</p>"
+							+"<p><strong>Technology Used:</strong> "+ projects.projects[index].technologies_used +"</p>"
+			if( projects.projects[index].github != '#'){
+				description += "<a type='button' target='_blank'class='btn btn-default' href='"+ projects.projects[index].github +"'>Github Page</a>" 
+			}
 			return "<div class='col-sm-4'>" 
 						+"<a href='#project-"+index+"' data-toggle='collapse'>"             
 							+"<img class='img-circle' src='"+ projects.projects[index].image +"' alt='Project' width='255' height='255'>"      
 						+"</a>"
 						+"<p class='text-center'><strong>"+ projects.projects[index].name +"</strong></p>" 
-						+"<div id='project-"+ index +"' class='collapse'>" 							
-							+"<p><strong>Description:</strong> "+ projects.projects[index].description +"</p>"
-							+"<p><strong>Technology Used:</strong> "+ projects.projects[index].technologies_used +"</p>"                   
+						+"<div id='project-"+ index +"' class='collapse'>" 					
+							+ description    
 						+"</div>" 
 					+"</div>";
 		},
