@@ -363,8 +363,11 @@ var projects = {
 		display_single: function(index){ 
 			var description = +"<p><strong>Description:</strong> "+ projects.projects[index].description +"</p>"
 							+"<p><strong>Technology Used:</strong> "+ projects.projects[index].technologies_used +"</p>"
+							+"<p> View source code - "
 			if( projects.projects[index].github != '#'){
-				description += "<a type='button' target='_blank'class='btn btn-default' href='"+ projects.projects[index].github +"'>Github Page</a>" 
+				description += "<a target='_blank' href='"+ projects.projects[index].github +"'><i class='fa fa-3x fa-github'></i></a> </p>" 
+			} else{
+				description += "<a data-toggle='tooltip' title='This repository is private!'><i class='fa fa-3x fa-lock'></i></a></p>"
 			}
 			return "<div class='col-sm-4'>" 
 						+"<a href='#project-"+index+"' data-toggle='collapse'>"             
