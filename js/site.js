@@ -310,11 +310,11 @@ var projects = {
 				image: "resources/quartz.jpg"
 			},
 			{
-				name: "Fidelity: Buy Local Bonds", 
-				description: "Fidelity's Leap Training Casestudy project. Java, Spring, SQL, HTML, CSS, Javascript", 
-				technologies_used: "Java - Spring MVC & iBatis, HTML, CSS - Bootstrap, Javascript - JQuery", 
-				github: "https://github.com/brandonDeen/brandonDeen.github.io",
-				image: "resources/blb.jpg"
+				name: "Guessing Game", 
+				description: "A simple guessing game, where you have 20 chances guess a number between 1 and 1 million. Then the \"AI\" tries to guess the number too. Least number of guesses wins and overall scores are stored in localStorage. <a href='https://brandondeen.github.io/GuessingGame/'>Play it now!</a> ", 
+				technologies_used: "HTML, CSS - Bootstrap, Javascript - JQuery", 
+				github: "https://github.com/brandonDeen/GuessingGame",
+				image: "resources/guessinggame.png"
 			},
 			{
 				name: "My Personal Webpage", 
