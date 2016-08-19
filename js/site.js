@@ -268,6 +268,13 @@ var projects = {
 				image: "resources/console.jpg"
 			},
 			{
+				name: "Paper, Rock, Scissors, Spock, Lizard", 
+				description: "A web version of the game, made famous on the show The Big Bang Theory, rock, paper, scissors, spock, lizard. <a target='_blank' href='https://brandondeen.github.io/RockPaperScissorsSpockLizard/'>Play it now!!!</a>",
+				github: "https://github.com/brandonDeen/RockPaperScissorsSpockLizard",
+				technologies_used: "HTML, CSS(Bootstrap & Font Awesome), Javascript (JQuery)",
+				image: "resources/rpssl.jpg"
+			},
+			{
 				name: "DroidMD", 
 				description: "An Android application that allows the user to log their diet, add medications with reminders, and alerts the users family if a medication has been missed. Users can enter their doctors information, allowing their physician to get daily, weekly, or monthly updates on everything the user tracks", 
 				github: "#", 
@@ -311,7 +318,7 @@ var projects = {
 			},
 			{
 				name: "Guessing Game", 
-				description: "A simple guessing game, where you have 20 chances guess a number between 1 and 1 million. Then the \"AI\" tries to guess the number too. Least number of guesses wins and overall scores are stored in localStorage. <a href='https://brandondeen.github.io/GuessingGame/'>Play it now!</a> ", 
+				description: "A simple guessing game, where you have 20 chances guess a number between 1 and 1 million. Then the \"AI\" tries to guess the number too. Least number of guesses wins and overall scores are stored in localStorage. <a target='_blank' href='https://brandondeen.github.io/GuessingGame/'>Play it now!</a> ", 
 				technologies_used: "HTML, CSS - Bootstrap, Javascript - JQuery", 
 				github: "https://github.com/brandonDeen/GuessingGame",
 				image: "resources/guessinggame.png"
@@ -323,13 +330,13 @@ var projects = {
 				technologies_used: "HTML, CSS - Bootstrap, FontAwesome, & W3 Schools, Javascript - JQuery",
 				image: "resources/personal.jpg"
 			},
-			{
-				name: "Android Calendar Application", 
-				description: "A simple calendar application that allows the user to create events, event reminders, and shared events. Java", 
-				github: "#", 
-				technologies_used: "Java, Android SDK, Eclipse",
-				image: "resources/calendar.jpg"
-			},
+			// {
+			// 	name: "Android Calendar Application", 
+			// 	description: "A simple calendar application that allows the user to create events, event reminders, and shared events. Java", 
+			// 	github: "#", 
+			// 	technologies_used: "Java, Android SDK, Eclipse",
+			// 	image: "resources/calendar.jpg"
+			// },
 			{
 				name: "HackerRank", 
 				description: "My repo of code challenges & problems I do for fun.", 
