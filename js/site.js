@@ -259,20 +259,27 @@ var projects = {
 				github: "https://github.com/brandonDeen/DemoSoftware", 
 				technologies_used: "C#, Microsoft PixelSense SDK, Java, Android SDK, Visual Studio & Eclipse",
 				image: "resources/Argus.png"
-			},			
+			},	
 			{
-				name: "pyRPG: A Tale in Text", 
-				description: "A text based role playing game, that runs in the console. You can create a character, customize their race, name and gender. Then go through a series of battles against tougher and tougher enemies, all while gaining gold that you can use to buy new equipment and upgrade you character with.", 
-				github: "https://github.com/brandonDeen/Text_RPG_Python", 
-				technologies_used: "Python, SQLite, Future: Incorporate Flask to create a web project",
-				image: "resources/console.jpg"
-			},
+				name: "HackerRank", 
+				description: "My repo of code challenges & problems I do for fun.", 
+				github: "https://github.com/brandonDeen/Hacker_Rank", 
+				technologies_used: "Java, Javascript, Python",
+				image: "resources/hackerrank.png"
+			},		
 			{
 				name: "Paper, Rock, Scissors, Spock, Lizard", 
 				description: "A web version of the game, made famous on the show The Big Bang Theory, rock, paper, scissors, spock, lizard. <a target='_blank' href='https://brandondeen.github.io/RockPaperScissorsSpockLizard/'>Play it now!!!</a>",
 				github: "https://github.com/brandonDeen/RockPaperScissorsSpockLizard",
 				technologies_used: "HTML, CSS(Bootstrap & Font Awesome), Javascript (JQuery)",
 				image: "resources/rpssl.jpg"
+			},
+			{
+				name: "pyRPG: A Tale in Text", 
+				description: "A text based role playing game, that runs in the console. You can create a character, customize their race, name and gender. Then go through a series of battles against tougher and tougher enemies, all while gaining gold that you can use to buy new equipment and upgrade you character with.", 
+				github: "https://github.com/brandonDeen/Text_RPG_Python", 
+				technologies_used: "Python, SQLite, Future: Incorporate Flask to create a web project",
+				image: "resources/console.jpg"
 			},
 			{
 				name: "DroidMD", 
@@ -289,11 +296,25 @@ var projects = {
 				image: "resources/angular.png"
 			},
 			{
-				name: "Fidelity: Next Generation Call Center (NGCC) Migration", 
-				description: "Migrating several Fidelity Client Service Teams, Business Units, and Portfolio Managers to the Next Generation Call Center using the Genesys Platform. Routing calls more accurately based on business rules.", 
-				technologies_used: "Javascript, Composer (Genesys Software Tool), AT&T Route It (Call Routing Tool), Eclipse", 
-				github: "#",
-				image: "resources/ngcc.jpg"
+				name: "Caesar Cipher", 
+				description: "A simple webpage that allows a user to encrypt or decrypt a message using the Caesar Cipher method of encryption.  <a target='_blank' href='https://brandondeen.github.io/CaesarCipher/'>See it in action!</a>", 
+				technologies_used: "HTML, CSS - Bootstrap, Javascript - JQuery", 
+				github: "https://github.com/brandonDeen/CaesarCipher",
+				image: "resources/caeser.jpg"
+			},
+			{
+				name: "Guessing Game", 
+				description: "A simple guessing game, where you have 20 chances guess a number between 1 and 1 million. Then the \"AI\" tries to guess the number too. Least number of guesses wins and overall scores are stored in localStorage. <a target='_blank' href='https://brandondeen.github.io/GuessingGame/'>Play it now!</a> ", 
+				technologies_used: "HTML, CSS - Bootstrap, Javascript - JQuery", 
+				github: "https://github.com/brandonDeen/GuessingGame",
+				image: "resources/guessinggame.png"
+			},
+			{
+				name: "My Personal Webpage", 
+				description: "This page right here!", 
+				github: "https://github.com/brandonDeen/brandonDeen.github.io", 
+				technologies_used: "HTML, CSS - Bootstrap, FontAwesome, & W3 Schools, Javascript - JQuery",
+				image: "resources/personal.jpg"
 			},
 			{
 				name: "Fidelity: Email Spoofer", 
@@ -316,20 +337,7 @@ var projects = {
 				github: "#",
 				image: "resources/quartz.jpg"
 			},
-			{
-				name: "Guessing Game", 
-				description: "A simple guessing game, where you have 20 chances guess a number between 1 and 1 million. Then the \"AI\" tries to guess the number too. Least number of guesses wins and overall scores are stored in localStorage. <a target='_blank' href='https://brandondeen.github.io/GuessingGame/'>Play it now!</a> ", 
-				technologies_used: "HTML, CSS - Bootstrap, Javascript - JQuery", 
-				github: "https://github.com/brandonDeen/GuessingGame",
-				image: "resources/guessinggame.png"
-			},
-			{
-				name: "My Personal Webpage", 
-				description: "This page right here!", 
-				github: "https://github.com/brandonDeen/brandonDeen.github.io", 
-				technologies_used: "HTML, CSS - Bootstrap, FontAwesome, & W3 Schools, Javascript - JQuery",
-				image: "resources/personal.jpg"
-			},
+			
 			// {
 			// 	name: "Android Calendar Application", 
 			// 	description: "A simple calendar application that allows the user to create events, event reminders, and shared events. Java", 
@@ -337,13 +345,6 @@ var projects = {
 			// 	technologies_used: "Java, Android SDK, Eclipse",
 			// 	image: "resources/calendar.jpg"
 			// },
-			{
-				name: "HackerRank", 
-				description: "My repo of code challenges & problems I do for fun.", 
-				github: "https://github.com/brandonDeen/Hacker_Rank", 
-				technologies_used: "Java, Javascript, Python",
-				image: "resources/hackerrank.png"
-			},
 			// {
 			// 	name: "Portfolio Page", 
 			// 	description: "Portfolio page following the Udacity HTML & CSS course",
@@ -368,7 +369,7 @@ var projects = {
 		],
 		
 		display_single: function(index){ 
-			var description = +"<p><strong>Description:</strong> "+ projects.projects[index].description +"</p>"
+			var description = "<p><strong>Description:</strong> "+ projects.projects[index].description +"</p>"
 							+"<p><strong>Technology Used:</strong> "+ projects.projects[index].technologies_used +"</p>"
 							+"<p> View source code - "
 			if( projects.projects[index].github != '#'){
