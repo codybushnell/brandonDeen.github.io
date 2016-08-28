@@ -317,11 +317,11 @@ var projects = {
 				image: "resources/personal.jpg"
 			},
 			{
-				name: "Fidelity: Email Spoofer", 
-				description: "An Email Spoofer used for testing email routing in Fidelity's Next Generation Call Center, using SMTP.", 
-				technologies_used: "C# - .NET & WPF, HTML, Javascript - JQuery, CSS - Bootstrap", 
-				github: "#",
-				image: "resources/spoofer.png"
+				name: "TicTacToe", 
+				description: "A web tic tac toe game you can play against the computer. <a target='_blank' href='http://brandonDeen.github.io/TicTacToe'>Get your War Games on!</a>",
+				github: "https://github.com/brandonDeen/TicTacToe",
+				technologies_used: "HTML, CSS(Bootstrap and FontAwesome), Javascript(JQuery)",
+				image: "resources/tictactoe.png"
 			},
 			{
 				name: "Fidelity: Genesys Rules Interpreter", 
@@ -332,12 +332,18 @@ var projects = {
 			},
 			{
 				name: "Fidelity: Quote Audit Reporting Tool (QUARTz)", 
-				description: "This tool allows analysts to run a wide variety of reports used in both stock exchange audits and market decisions. Java, Spring, SQL, HTML, CSS(Bootstrap), Javascript(JQuery)", 
+				description: "This tool allows analysts to run a wide variety of reports used in both stock exchange audits and market decisions.", 
 				technologies_used: "Java - Spring MVC & JDBC, HTML, CSS - Bootstrap, Javascript - JQuery & Datatables", 
 				github: "#",
 				image: "resources/quartz.jpg"
 			},
-			
+			// {
+			// 	name: "Fidelity: Email Spoofer", 
+			// 	description: "An Email Spoofer used for testing email routing in Fidelity's Next Generation Call Center, using SMTP.", 
+			// 	technologies_used: "C# - .NET & WPF, HTML, Javascript - JQuery, CSS - Bootstrap", 
+			// 	github: "#",
+			// 	image: "resources/spoofer.png"
+			// },
 			// {
 			// 	name: "Android Calendar Application", 
 			// 	description: "A simple calendar application that allows the user to create events, event reminders, and shared events. Java", 
