@@ -7,7 +7,6 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<!-- CSS -->
 	<link rel='stylesheet' href='css/bootstrap.min.css' >
-	<link rel='stylesheet' href='css/w3.css'>
 	<link rel='stylesheet' href='css/font-awesome.min.css'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu' >
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -15,18 +14,139 @@
 	<!-- JS -->
 	<script src='js/jQuery.js'></script>
 	<script src='js/bootstrap.min.js'></script>
-	<script src='js/site.js'></script>
 	<!-- Browser/Favorite Icon -->
-	<link rel="icon" href="resources/icon.png">
+	<link rel="icon" href="resources/favicon.ico">
 </head>
-<body id='myPage' data-spy='scroll' data-target='.navbar' data-offset='50'>
+<body>
 
-		<nav id='header' class='navbar navbar-default navbar-fixed-top'></nav>
-		<section id='home' class='carousel slide' data-ride='carousel'></section> 
-		<section id='about' class='container-fluid text-center  w3-padding-32'></section> 
-		<section id='projects' class='container-fluid text-center  w3-padding-32'></section> 
-		<section id='contact' class='container-fluid text-center  w3-padding-32'></section>
-		<footer id='footer' class='container-fluid text-center'></footer>
+	<nav class="navbar navbar-inverse" role="navigation">
+	  <div class="container">
+	    	<div class="navbar-header">
+	    	<a class="navbar-brand navbar-brand-centered">Brandon Deen</a>
+	    	</div>
+	    </div>	
+	</nav>
 
+	<section id='main' class='container'>
+		<br>
+		<section id='content'>
+			<ul class='nav nav-tabs nav-justified'>
+			  <li class='active'><a id='hometab' href="#home" data-toggle='tab' >Home</a></li>
+			  <li><a id='resumetab' href="#resume" data-toggle='tab' >Resume</a></li>
+			  <li><a id='skillstab' href="#skills" data-toggle='tab' onclick='animate_skills_bar()''>Skills</a></li>
+			  <li><a id='projectstab' href="#projects" data-toggle='tab' >Projects</a></li>
+			  <li><a id='contacttab' href="#contact" data-toggle='tab' onclick='loadGoogleMap()'>Contact</a></li>
+			</ul>
+			<div class='container tab-content'>
+
+				<div id="home" class='tab-pane fade in active'>
+					<br>
+					<img class='img-circle' src="resources/pic.jpg">
+					<h2>Hey, I'm <strong>Brandon Deen!</strong></h2>
+					<h3>a software engineer living in the Dallas-Fort Worth area of Texas.</h3>
+					<br>
+					<hr>
+					<br>
+					<div class='row'>
+						<div class='col-sm-1'></div>
+						<div id='about' class='col-sm-10'></div>
+						<div class='col-sm-1'></div>
+					</div>
+					<br>
+					<hr>
+					<br>
+					<div class='row'>
+						<div class='col-sm-2'></div>
+						<div id='minicontact' class='col-sm-8'></div>
+						<div class='col-sm-2'></div>
+					</div>
+				</div>
+
+				<div id="resume" class='tab-pane fade'>
+						<br>
+						<h1> <strong>RESUME</strong> </h1>
+						<hr>
+						<h3><i class='fa fa-briefcase'></i>&nbsp;&nbsp;Work</h3>
+						<div class='row'>
+							<div class='col-sm-2'></div>
+							<div id='work' class='col-sm-8'></div>
+							<div class='col-sm-2'></div>
+						</div>
+						<hr>
+						<h2><i class='fa fa-university'></i>&nbsp;&nbsp;Education</h2>
+						<div class='row'>
+							<div class='col-sm-2'></div>
+							<div id='education' class='col-sm-8'></div>
+							<div class='col-sm-2'></div>
+						</div>
+						<hr>
+						<a type='button' class='btn' target='_blank' href='resources/BrandonDeen_Resume.pdf' download='BrandonDeen_Resume'><i class='fa fa-download'></i> Download my resume (pdf <i class='fa fa-pdf-o'></i>)</a>&nbsp;&nbsp;
+						<a type='button' class='btn' target='_blank' href='resources/BrandonDeen_Resume.doc' download='BrandonDeen_Resume'><i class='fa fa-download'></i> Download my resume (doc <i class='fa fa-doc-o'></i>)</a>
+					
+				</div>
+
+				<div id="skills" class='tab-pane fade'>
+					<br>
+					<h1> <strong>SKILLS</strong> </h1>
+					<hr>
+					<h2><i class='fa fa-user'></i>&nbsp;&nbsp;Personal</h2>
+					<br><br>
+					<div id='softskills'></div>
+					<hr>
+					<h2><i class='fa fa-code'></i>&nbsp;&nbsp;Technical</h2>
+					<br><br>
+					<div id='technicalskills'></div>				
+				</div>
+
+				<div id="projects" class='tab-pane fade'>
+					<br>
+					<h1> <strong>PROJECTS</strong> </h1>
+					<hr>
+				</div>
+
+				<div id="contact" class='tab-pane fade'>
+					<br>
+					<h1> <strong>CONTACT</strong> </h1>
+					<hr>
+					<div class='row'>
+						<div class='col-sm-2'></div>
+						<div id='googleMap' class='col-sm-8'></div>
+						<div class='col-sm-2'></div>
+					</div>
+					<hr>
+					<div class='row'>
+						<div class='col-sm-2'></div>
+						<div id='email' class='col-sm-8'>
+							<h3>Email Me</h3>
+						    <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" required>
+						    <br>
+						    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+						    <br>
+						    <a id='send' class='pull-right' data-toggle='tooltip' title='send'><i class='fa fa-3x fa-send' onclick='handleMailto()'></i></a>
+						    <br>						    
+						    <br>
+						    <hr>
+						    <h3>Or Find Me Here</h3>
+						    <div id='sociallinks'></div>
+						</div>
+						<div class='col-sm-2'></div>
+					</div>
+		</section>
+	</section>
+							
+	<footer id='footer' class='container-fluid text-center'>
+		<p>
+			This page was created by Brandon Deen 
+			<a target='_blank' href='https://github.com/brandonDeen/brandonDeen.github.io'>
+				<i class='fa fa-github' data-toggle='tooltip' title='View the Source Code'></i>
+			</a>
+		</p>
+	</footer>
+
+
+	<!-- Add Google Maps -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<!-- NON CSS DEPENDENT JS -->
+	<script src='js/site.js'></script>
 </body>	
 </html>
