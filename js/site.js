@@ -55,7 +55,7 @@ var bio = {
 
 var work = {
 	jobs: [
-		{	title: 'Associate Software Engineer', company: 'Fidelity Investments', 
+		{	title: 'Software Engineer', company: 'Fidelity Investments', 
 			start: 'June 2015', end: 'Present', location: 'Westlake, TX', 
 			description: "<p class='top_description'>Provide analytical problem-solving through object oriented programming concepts for the fourth largest mutual fund and financial services group in the world. Developing and customizing software for a diverse client base, both internal and external.</p>"+
 				"<ul><li> Developed and customized new routing strategies for Fidelity’s Next Generation Call Center from requirements gathering through successful deployment.</li>"+
@@ -63,7 +63,7 @@ var work = {
 				"<li> Designed and developed custom software tools to increase the productivity of the Next Generation Call Center team and their customers.</li>"+
 				"<li> Contributed to the quote auditing and reporting tool that saved the firm over $1 million in stock exchange fees.</li>"+
 				"<li> Leap Graduate: Leap training consists of classroom training and project development in the following technologies: "+
-				"<ul><li>Object Oriented Design and Analysis, Requirements</li><li>Java (jaxb, Spring, JDBC, iBatis)</li>  <li>C# (.NET, LINQ, WPF)</li> <li>Web development (HTML5, CSS3, & Javascript)</li><li> Web Services (SOAP & REST) </li><li> SQL and PL/SQL</li></ul></li></ul>"
+				"<ul><li>Object Oriented Design and Analysis, Requirements</li><li>Java (jaxb, Spring, JDBC, iBatis, Hibernate)</li>  <li>C# (.NET, LINQ, WPF)</li> <li>Web development (HTML5, CSS3, & Javascript)</li><li> Web Services (SOAP & REST) </li><li> SQL and PL/SQL</li></ul></li></ul>"
 
 		},
 		// {	title: 'Receiver/Stocker', company: 'Lowes Home Improvement', 
@@ -134,7 +134,7 @@ var skills = {
 		{name: "Java", level: 70, level_str: "Proficient", color: "lightgreen" }
 		,{name: "Python", level: 70, level_str: "Proficient", color: "lightgreen" }
 		,{name: "C#", level: 70, level_str: "Proficient", color: "lightgreen" }
-		,{name: "SQL", level: 60, level_str: "Proficient", color: "lightgreen" }
+		,{name: "SQL", level: 70, level_str: "Proficient", color: "lightgreen" }
 		,{name: "HTML", level: 60, level_str: "Proficient", color: "lightblue" }
 		,{name: "CSS", level: 50, level_str: "Familiar", color: "lightblue" }
 		,{name: "Javascript", level: 70, level_str: "Proficient", color: "lightblue" }
@@ -248,7 +248,7 @@ var projects = {
 				image: "resources/tictactoe.png"
 			},
 			{
-				name: "Genesys Rules Interpreter", 
+				name: "XML Parser / Interpreter", 
 				description: "Takes in a bulky and user unfriendly xml file and translates it into json and outputs the new business rules into a table with the ability to export to excel.", 
 				technologies_used: "C# - .NET & WPF, HTML, Javascript - JQuery & Datatables, CSS - Bootstrap", 
 				github: "#",
@@ -262,10 +262,10 @@ var projects = {
 				image: "resources/quartz.jpg"
 			},
 			{
-				name: "Email Spoofer", 
-				description: "An Email Spoofer used for testing email routing in Fidelity's Next Generation Call Center, using SMTP.", 
-				technologies_used: "C# - .NET & WPF, HTML, Javascript - JQuery, CSS - Bootstrap", 
-				github: "#",
+				name: "Snake", 
+				description: "A simple snake game, for the Nokia cell phone nostalgia.<a target='_blank' href='http://brandonDeen.github.io/snake'>Play Now!</a>", 
+				technologies_used: "HTML, Javascript - JQuery, CSS - Bootstrap", 
+				github: "https://github.com/brandonDeen/snake",
 				image: "resources/spoofer.png"
 			},
 			{
@@ -303,6 +303,13 @@ var projects = {
 			// 	github: "#",
 			// 	image: "http://placehold.it/255x255"
 			// },
+			//{
+			//	name: "Email Spoofer", 
+			//	description: "An Email Spoofer used for testing email routing in Fidelity's Next Generation Call Center, using SMTP.", 
+			//	technologies_used: "C# - .NET & WPF, HTML, Javascript - JQuery, CSS - Bootstrap", 
+			//	github: "#",
+			//	image: "resources/spoofer.png"
+			//},
 		],
 		
 		display_single: function(index){ 
