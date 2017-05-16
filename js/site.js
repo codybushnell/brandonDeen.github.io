@@ -199,6 +199,13 @@ var projects = {
 				image: "resources/rpssl.jpg"
 			},
 			{
+				name: "Snake", 
+				description: "A simple snake game, for that Nokia cell phone nostalgia.<a target='_blank' href='http://brandonDeen.github.io/snake'>Play Now!</a>", 
+				technologies_used: "HTML, Javascript - JQuery, CSS - Bootstrap", 
+				github: "https://github.com/brandonDeen/snake",
+				image: "resources/snake.png"
+			},
+			{
 				name: "pyRPG: A Tale in Text", 
 				description: "A text based role playing game, that runs in the console. You can create a character, customize their race, name and gender. Then go through a series of battles against tougher and tougher enemies, all while gaining gold that you can use to buy new equipment and upgrade you character with.", 
 				github: "https://github.com/brandonDeen/Text_RPG_Python", 
@@ -260,13 +267,6 @@ var projects = {
 				technologies_used: "Java - Spring MVC & JDBC, HTML, CSS - Bootstrap, Javascript - JQuery & Datatables", 
 				github: "#",
 				image: "resources/quartz.jpg"
-			},
-			{
-				name: "Snake", 
-				description: "A simple snake game, for the Nokia cell phone nostalgia.<a target='_blank' href='http://brandonDeen.github.io/snake'>Play Now!</a>", 
-				technologies_used: "HTML, Javascript - JQuery, CSS - Bootstrap", 
-				github: "https://github.com/brandonDeen/snake",
-				image: "resources/spoofer.png"
 			},
 			{
 				name: "Hangman", 
