@@ -203,7 +203,7 @@ var projects = {
 				description: "A simple snake game, for that Nokia cell phone nostalgia.<a target='_blank' href='http://brandonDeen.github.io/snake'>Play Now!</a>", 
 				technologies_used: "HTML, Javascript - JQuery, CSS - Bootstrap", 
 				github: "https://github.com/brandonDeen/snake",
-				image: "resources/snake.png"
+				image: "resources/snake.PNG"
 			},
 			{
 				name: "pyRPG: A Tale in Text", 
