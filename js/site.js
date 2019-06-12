@@ -37,13 +37,11 @@ var bio = {
 	name: "Brandon Deen",
 	summary: "<h4>I'm a major nerd that loves to write code, solve problems, and re-enact scenes from Frozen with my daughter. <em>**note she has recently discovered Ninja Turtles, so...WIN!**</em> <br><br>I am always looking for ways to improve myself in any way possible. <br>~Whether its learning a new language or api, or getting better at an existing skill.~ <br><br>When I'm not working I'm usually reading, playing games, or trying to make a game. <br><br>I am a huge baseball fan, Go Rangers!<br><br> I openly challenge anyone I can find to some Star Trek and/or Star Wars trivia. <br><br> Did I mention I am kind of a nerd?</h4>",
 	links: [ 
-		// "&nbsp; <i class='fa fa-5x fa-square'></i>",
 		"&nbsp; <i class='fa fa-5x fa-square'></i>" ,
 		"&nbsp; <a data-toggle='tooltip' title='My Github Profile' target='_blank' href='https://github.com/brandonDeen'><i class='fa fa-5x fa-github-square'></i></a>",
 		"&nbsp; <i class='fa fa-5x fa-square'></i>",
 		"&nbsp; <a data-toggle='tooltip' title='My LinkedIn Profile' target='_blank' href='https://www.linkedin.com/in/brandon-deen-116b7254'><i class='fa fa-5x fa-linkedin-square'></i></a>",
-		"&nbsp; <i class='fa fa-5x fa-square'></i>",
-		// "&nbsp; <i class='fa fa-5x fa-square'></i>" 
+		"&nbsp; <i class='fa fa-5x fa-square'></i>"
 	],
 	display_about: function(){
 		return "<div>" + bio.summary + "</div>";
@@ -55,25 +53,23 @@ var bio = {
 
 var work = {
 	jobs: [
-		{	title: 'Software Engineer', company: 'Fidelity Investments', 
+		{	title: 'Associate Software Engineer', company: 'Fidelity Investments', 
 			start: 'June 2015', end: 'Present', location: 'Westlake, TX', 
 			description: "<p class='top_description'>Provide analytical problem-solving through object oriented programming concepts for the fourth largest mutual fund and financial services group in the world. Developing and customizing software for a diverse client base, both internal and external.</p>"+
-				"<ul><li> Developed and customized new routing strategies for Fidelity’s Next Generation Call Center from requirements gathering through successful deployment.</li>"+
+				"<ul>"+
+				"<li> Lead developer and scrum master on several projects and initiatives, designing solutions, and guiding other developers in their implementation</li>"+
+				"<li> Design, develop, and test enhancements and new functionality (Java, Spring, Angular, SQL)</li>"+
+				"<li> Provide support by investigating application issues and developing data fixes to correct issues (PL/SQL) </li>"+
+				"<li> Developed and maintained software automation suite (Sahi/Selenium, Java)</li>"+
+				"<li> Developed and customized new routing strategies for Fidelity’s Next Generation Call Center from requirements gathering through successful deployment (Javascript) </li>"+
+				"<li>  Designed and developed custom software tools to increase the productivity of the Next Generation Call Center team and their customers (C#, .NET) </li>"+
+				"<li> Developed and customized new routing strategies for Fidelity’s Next Generation Call Center from requirements gathering through successful deployment.</li>"+
 				"<li> Introduced methodologies and best practices that enhanced team productivity and decreased the number of defects produced. </li>"+
-				"<li> Designed and developed custom software tools to increase the productivity of the Next Generation Call Center team and their customers.</li>"+
 				"<li> Contributed to the quote auditing and reporting tool that saved the firm over $1 million in stock exchange fees.</li>"+
 				"<li> Leap Graduate: Leap training consists of classroom training and project development in the following technologies: "+
-				"<ul><li>Object Oriented Design and Analysis, Requirements</li><li>Java (jaxb, Spring, JDBC, iBatis, Hibernate)</li>  <li>C# (.NET, LINQ, WPF)</li> <li>Web development (HTML5, CSS3, & Javascript)</li><li> Web Services (SOAP & REST) </li><li> SQL and PL/SQL</li></ul></li></ul>"
+				"<ul><li>Object Oriented Design and Analysis, Requirements</li><li>Java (jaxb, Spring, JDBC, iBatis)</li>  <li>C# (.NET, LINQ, WPF)</li> <li>Web development (HTML5, CSS3, & Javascript)</li><li> Web Services (SOAP & REST) </li><li> SQL and PL/SQL</li></ul></li></ul>"
 
 		},
-		// {	title: 'Receiver/Stocker', company: 'Lowes Home Improvement', 
-		// 	start: 'October 2012', end: 'June 2015', location: 'Mansfield, TX', 
-		// 	description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-		// },
-		// {	title: 'Cadet and Officer', company: 'U.S. Army', 
-		// 	start: 'June 2008', end: 'June 2012', location: 'Ft. Leonard Wood, MO', 
-		// 	description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-		// },
 		// {title: '', company: '', start: '', end: '', location: '', description: ''},
 		// {title: '', company: '', start: '', end: '', location: '', description: ''},
 	],
@@ -82,7 +78,6 @@ var work = {
 
 		for(job in work.jobs){
 			s += "<br><div class='item'>"
-				// + "<img src='"+ education.schools[school].image +"'> " 
 				+ "<h4><strong>" + work.jobs[job].title + " at "+ work.jobs[job].company +"</strong></h4>"
 				+ "<p class='top_description'>" + work.jobs[job].start + " - " + work.jobs[job].end + " in " + work.jobs[job].location
 				+ "</p><hr>" + work.jobs[job].description
@@ -134,7 +129,7 @@ var skills = {
 		{name: "Java", level: 70, level_str: "Proficient", color: "lightgreen" }
 		,{name: "Python", level: 70, level_str: "Proficient", color: "lightgreen" }
 		,{name: "C#", level: 70, level_str: "Proficient", color: "lightgreen" }
-		,{name: "SQL", level: 70, level_str: "Proficient", color: "lightgreen" }
+		,{name: "SQL", level: 60, level_str: "Proficient", color: "lightgreen" }
 		,{name: "HTML", level: 60, level_str: "Proficient", color: "lightblue" }
 		,{name: "CSS", level: 50, level_str: "Familiar", color: "lightblue" }
 		,{name: "Javascript", level: 70, level_str: "Proficient", color: "lightblue" }
@@ -199,13 +194,6 @@ var projects = {
 				image: "resources/rpssl.jpg"
 			},
 			{
-				name: "Snake", 
-				description: "A simple snake game, for that Nokia cell phone nostalgia.<a target='_blank' href='http://brandonDeen.github.io/snake'>Play Now!</a>", 
-				technologies_used: "HTML, Javascript - JQuery, CSS - Bootstrap", 
-				github: "https://github.com/brandonDeen/snake",
-				image: "resources/snake.PNG"
-			},
-			{
 				name: "pyRPG: A Tale in Text", 
 				description: "A text based role playing game, that runs in the console. You can create a character, customize their race, name and gender. Then go through a series of battles against tougher and tougher enemies, all while gaining gold that you can use to buy new equipment and upgrade you character with.", 
 				github: "https://github.com/brandonDeen/Text_RPG_Python", 
@@ -255,7 +243,7 @@ var projects = {
 				image: "resources/tictactoe.png"
 			},
 			{
-				name: "XML Parser / Interpreter", 
+				name: "Genesys Rules Interpreter", 
 				description: "Takes in a bulky and user unfriendly xml file and translates it into json and outputs the new business rules into a table with the ability to export to excel.", 
 				technologies_used: "C# - .NET & WPF, HTML, Javascript - JQuery & Datatables, CSS - Bootstrap", 
 				github: "#",
@@ -267,6 +255,13 @@ var projects = {
 				technologies_used: "Java - Spring MVC & JDBC, HTML, CSS - Bootstrap, Javascript - JQuery & Datatables", 
 				github: "#",
 				image: "resources/quartz.jpg"
+			},
+			{
+				name: "Email Spoofer", 
+				description: "An Email Spoofer used for testing email routing in Fidelity's Next Generation Call Center, using SMTP.", 
+				technologies_used: "C# - .NET & WPF, HTML, Javascript - JQuery, CSS - Bootstrap", 
+				github: "#",
+				image: "resources/spoofer.png"
 			},
 			{
 				name: "Hangman", 
@@ -303,13 +298,6 @@ var projects = {
 			// 	github: "#",
 			// 	image: "http://placehold.it/255x255"
 			// },
-			//{
-			//	name: "Email Spoofer", 
-			//	description: "An Email Spoofer used for testing email routing in Fidelity's Next Generation Call Center, using SMTP.", 
-			//	technologies_used: "C# - .NET & WPF, HTML, Javascript - JQuery, CSS - Bootstrap", 
-			//	github: "#",
-			//	image: "resources/spoofer.png"
-			//},
 		],
 		
 		display_single: function(index){ 
@@ -389,8 +377,3 @@ function loadGoogleMap(){
 $(document).ready(function(){
 	load_content( get_page_sections() );
 });
-
-
-
-
-
