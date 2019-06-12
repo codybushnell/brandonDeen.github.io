@@ -126,13 +126,13 @@ var education = {
 var skills = {
 	// skill levels 20: Beginner, 40: Familiar, 60: Proficient, 80: Expert, 100: Master
 	technical: [
-		{name: "Java", level: 70, level_str: "Proficient", color: "lightgreen" }
+		{name: "Java", level: 80, level_str: "Proficient", color: "lightgreen" }
 		,{name: "Python", level: 70, level_str: "Proficient", color: "lightgreen" }
 		,{name: "C#", level: 70, level_str: "Proficient", color: "lightgreen" }
-		,{name: "SQL", level: 60, level_str: "Proficient", color: "lightgreen" }
-		,{name: "HTML", level: 60, level_str: "Proficient", color: "lightblue" }
-		,{name: "CSS", level: 50, level_str: "Familiar", color: "lightblue" }
-		,{name: "Javascript", level: 70, level_str: "Proficient", color: "lightblue" }
+		,{name: "SQL", level: 80, level_str: "Proficient", color: "lightgreen" }
+		,{name: "HTML", level: 75, level_str: "Proficient", color: "lightblue" }
+		,{name: "CSS", level: 60, level_str: "Familiar", color: "lightblue" }
+		,{name: "Javascript", level: 80, level_str: "Proficient", color: "lightblue" }
 	],
 	soft: [ 
 		{ name: 'Communication', icon: "<i class='fa fa-2x fa-comments-o'></i>" }, 
