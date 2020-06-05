@@ -53,7 +53,7 @@ var bio = {
 
 var work = {
 	jobs: [
-		{	title: 'Associate Software Engineer', company: 'Fidelity Investments', 
+		{	title: 'Senior Software Engineer', company: 'Fidelity Investments', 
 			start: 'June 2015', end: 'Present', location: 'Westlake, TX', 
 			description: "<p class='top_description'>Provide analytical problem-solving through object oriented programming concepts for the fourth largest mutual fund and financial services group in the world. Developing and customizing software for a diverse client base, both internal and external.</p>"+
 				"<ul>"+
@@ -70,7 +70,7 @@ var work = {
 				"<ul><li>Object Oriented Design and Analysis, Requirements</li><li>Java (jaxb, Spring, JDBC, iBatis)</li>  <li>C# (.NET, LINQ, WPF)</li> <li>Web development (HTML5, CSS3, & Javascript)</li><li> Web Services (SOAP & REST) </li><li> SQL and PL/SQL</li></ul></li></ul>"
 
 		},
-		// {title: '', company: '', start: '', end: '', location: '', description: ''},
+		{title: 'Combat Engineer (12b)', company: 'U.S. Army', start: 'June 2008', end: 'July 2012', location: '', description: ''},
 		// {title: '', company: '', start: '', end: '', location: '', description: ''},
 	],
 	display: function(){
