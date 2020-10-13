@@ -70,7 +70,7 @@ var work = {
 				"<ul><li>Object Oriented Design and Analysis, Requirements</li><li>Java (jaxb, Spring, JDBC, iBatis)</li>  <li>C# (.NET, LINQ, WPF)</li> <li>Web development (HTML5, CSS3, & Javascript)</li><li> Web Services (SOAP & REST) </li><li> SQL and PL/SQL</li></ul></li></ul>"
 
 		},
-		{title: 'Combat Engineer (12b)', company: 'U.S. Army', start: 'June 2008', end: 'July 2012', location: '', description: ''},
+		{title: 'Combat Engineer (12b)', company: 'U.S. Army', start: 'June 2008', end: 'July 2012', location: 'Ft. Leonard Wood, MO', description: ''},
 		// {title: '', company: '', start: '', end: '', location: '', description: ''},
 	],
 	display: function(){
