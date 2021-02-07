@@ -35,7 +35,7 @@ function get_page_sections(){
 
 var bio = {
 	name: "Brandon Deen",
-	summary: "<h4>I'm a major nerd that loves to write code, solve problems, and re-enact scenes from Frozen with my daughter. <em>**note she has recently discovered Ninja Turtles, so...WIN!**</em> <br><br>I am always looking for ways to improve myself in any way possible. <br>~Whether its learning a new language or api, or getting better at an existing skill.~ <br><br>When I'm not working I'm usually reading, playing games, or trying to make a game. <br><br>I am a huge baseball fan, Go Rangers!<br><br> I openly challenge anyone I can find to some Star Trek and/or Star Wars trivia. <br><br> Did I mention I am kind of a nerd?</h4>",
+	summary: "<h4>I'm a major nerd that loves to write code, solve problems, and re-enact scenes from Frozen with my daughter. <em>**note she has recently discovered Ninja Turtles, so...WIN!**</em> <br><br>I am always looking for ways to improve myself in any way possible. <br>~Whether its learning a new language or api, or getting better at an existing skill.~ <br><br>When I'm not working I'm usually reading, playing games, or trying to make a game. <br><br>I am a huge baseball fan, Go Rangers!<br><br> I openly challenge anyone I can find to some Star Trek and/or Star Wars trivia. <br><br> Did I mention I am kind of a nerd? Oh yeah, I forgot to mention that I learned everything I know about being cool from this guy I met in college, Cody Bushnell.</h4>",
 	links: [ 
 		"&nbsp; <i class='fa fa-5x fa-square'></i>" ,
 		"&nbsp; <a data-toggle='tooltip' title='My Github Profile' target='_blank' href='https://github.com/brandonDeen'><i class='fa fa-5x fa-github-square'></i></a>",
